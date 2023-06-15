@@ -58,8 +58,7 @@
                 @role('admin')
                     <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Master Data</div>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category-2"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -77,8 +76,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-truck-delivery" width="24" height="24"
@@ -97,8 +95,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -118,8 +115,7 @@
                 @role('admin')
                     <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Management Stok</div>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-database-import" width="24" height="24"
@@ -142,8 +138,7 @@
                 @endrole
                 <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Transaksi</div>
                 <li class="nav-item">
-                    <a class="nav-link"
-                        href="#">
+                    <a class="nav-link" href="#">
                         <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-database-export" width="24" height="24"
@@ -164,8 +159,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"
-                        href="#">
+                    <a class="nav-link" href="#">
                         <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-database"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -186,8 +180,8 @@
                 @role('admin')
                     <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Management User</div>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link {{ Route::is('backoffice.permission*') ? 'active' : '' }}"
+                            href="{{ route('backoffice.permission.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-search"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -205,8 +199,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link {{ Route::is('backoffice.role*') ? 'active' : '' }}"
+                            href="{{ route('backoffice.role.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -223,8 +217,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
@@ -242,8 +235,7 @@
                     </li>
                     <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Laporan</div>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">
+                        <a class="nav-link" href="#">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
