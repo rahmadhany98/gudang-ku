@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backoffice\RoleController;
+use App\Http\Controllers\Backoffice\UserController;
 use App\Http\Controllers\Backoffice\DashboardController;
 use App\Http\Controllers\Backoffice\PermissionController;
 
@@ -24,4 +25,5 @@ Route::group(['prefix' => 'backoffice', 'as' => 'backoffice.', 'middleware' => [
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
     Route::resource('/permission', PermissionController::class);
     Route::resource('/role', RoleController::class);
+    Route::resource('/user', UserController::class);
 });
