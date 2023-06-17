@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backoffice\RoleController;
 use App\Http\Controllers\Backoffice\UserController;
+use App\Http\Controllers\Backoffice\StockController;
+use App\Http\Controllers\Backoffice\ProductController;
 use App\Http\Controllers\Backoffice\CategoryController;
 use App\Http\Controllers\Backoffice\SupplierController;
 use App\Http\Controllers\Backoffice\DashboardController;
@@ -30,4 +32,9 @@ Route::group(['prefix' => 'backoffice', 'as' => 'backoffice.', 'middleware' => [
     Route::resource('/user', UserController::class);
     Route::resource('/category', CategoryController::class);
     Route::resource('/supplier', SupplierController::class);
+    Route::resource('/product', ProductController::class);
+    Route::controller(StockController::class)->prefix('/stock')->as('stock.')->group(function () {
+        Route::get('/index', 'index')->name('index');
+        Route::put('/update/{id}', 'update')->name('update');
+    });
 });
