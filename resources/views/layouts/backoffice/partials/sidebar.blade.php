@@ -142,7 +142,8 @@
                 @endrole
                 <div class="hr-text hr-text-left ml-2 mb-2 mt-2">Transaksi</div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link {{ Route::is('backoffice.transaction*') ? 'active' : '' }}"
+                        href="{{ route('backoffice.transaction') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-database-export" width="24" height="24"
@@ -163,7 +164,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link {{ Route::is('backoffice.order*') ? 'active' : '' }}"
+                        href="{{ route('backoffice.order.index') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-database"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25"
